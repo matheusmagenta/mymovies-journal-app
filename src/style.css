@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body {
+  padding-top: 58px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  background-color: #fdf4dc;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#movie-search {
+  width: 180px;
+  height: 27px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: 4px;
+}
+
+.movie-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.movie-item {
+  text-align: center;
+  font-weight: 400;
+  background-color: #d2b878;
+  width: 180px;
+  margin: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 9px #d3b378;
+  box-shadow: 5px 5px 9px #d3b378;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.movie-item:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 150px;
+  height: 190px;
+  border-radius: 0 0 7px 7px;
+  margin-bottom: 5px;
+}
+
+.fa-film {
+  font-size: 1.5rem;
+}
+
+.movie-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.movie-details {
+  text-decoration: none;
+  background-color: #212529;
+  color: #d2b878;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 10px;
+}
+
+.movie-info {
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.btn-light {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.movie-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+}
+
+.card .movie-poster {
+  width: 30%;
+  height: 30%;
+}
+.card .imdb-logo {
+  width: 30px;
+  height: 15px;
+  margin-right: 2px;
+}
+
+.imdb-logo {
+  -webkit-transform: translateY(-1.6px);
+  transform: translateY(-1.6px);
+}
+
+.accordion {
+  width: 80%;
+}
+
+.col {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  font-size: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  margin-top: 10px;
+  width: 180px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-1rem);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.landing-image {
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+.landing-image:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.recommendations,
+.watchlist,
+.trending,
+.search {
+  width: 100%;
+  background-color: #fff9d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.platform-logo {
+  width: 20px;
+  height: 20px;
+}
+
+#recommendations,
+#watchlist,
+#search,
+#trending {
+  font-size: 3.5rem;
+  margin: -9px;
+  padding: 0;
+  line-height: 1.2;
+  transform: translateY(10%);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.btn-search {
+  line-height: 0.5rem;
+}
+
+/* Inner Width Buttton */
+
+.inner-width-neon {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.inner-width-neon .bg-width {
+  background-color: #fff6a8;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: width 0.3s, left 0.3s;
+  transition: width 0.3s, left 0.3s;
+}
+
+.inner-width-neon .btn-text {
+  z-index: 1;
+}
+
+.inner-width-neon:hover {
+  -webkit-box-shadow: 0px 0px 30px 20px #fff5a2;
+  box-shadow: 0px 0px 30px 20px #fff5a2;
+  border-color: #fff6a8;
+}
+
+.inner-width-neon:hover .bg-width {
+  width: 100%;
+  left: 0%;
+  z-index: -1;
+}
+
+.inner-width-neon:hover .btn-text {
+  color: #a79500;
+}
+
+.trending {
+  border-bottom: 4px solid black;
+}
+
+.search {
+  border-top: 4px solid black;
+}
+
+/* .nav-link {
+  border: 0px;
+  color: black;
+  background-color: #fdf4dc;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  font-weight: 600;
+} */
+
+.navbar {
+  background-color: #fdf4dc;
+}
+
+::placeholder {
+  color: black !important;
+  opacity: 1;
+  text-align: center;
+}
+
+input:focus,
+input.form-control:focus {
+  color: black;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+input:focus::placeholder {
+  color: gray !important;
+}
+
+#search {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.mymoviesapp {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mymoviesapp {
+  font-size: 1.8rem;
+  color: #fdf4dc !important;
+  margin: -9px;
+  padding: 0;
+  line-height: 1.2;
+  transform: translateY(10%);
+}
+
+.fa-film.landing {
+  color: #fdf4dc;
+  font-size: 1.8rem;
+}
+
+.movie-mymovies {
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-recommendations {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 680px) {
+  #mymoviesapp {
+    font-size: 1rem;
+  }
+
+  #recommendations,
+  #watchlist,
+  #search,
+  #trending {
+    font-size: 1.7rem;
+    line-height: 160%;
+  }
+}
+
+.main-view {
+  transform: translateY(10px);
+  margin-bottom: 20px;
+}
+
+.movie-watchlist,
+.movie-with-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+  .movie-mymovies {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.overview {
+  text-align: center;
+}
+
+.navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.pagination-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.pagination-text {
+  margin: 5px;
+}
+
+.tabs {
+  width: 80%;
+}
+
+.nav-all {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.btn-search {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-view {
+    transform: translateY(85px);
+  }
+  .landing {
+    transform: translateY(-1rem);
+  }
+}
+
+@media screen and (min-width: 510px) and (max-width: 725px) {
+  .nav-trending {
+    display: none;
+  }
+
+  #movie-search {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 509px) {
+  .nav-trending {
+    display: none;
+  }
+  #movie-search {
+    width: 100px;
+  }
+  .btn-search {
+    display: none;
+  }
+}
+
+.streaming,
+.flatrate,
+.buy,
+.rent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.streaming-item {
+  list-style-type: none;
+}
+
+.streaming-category {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.streaming-title-section {
+  margin-top: 15px;
+
+  font-size: 1.2rem;
+}
+
+.movie-interactive,
+.add-to-watchlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#review-title-added,
+#review-description-added {
+  margin-bottom: 5px;
+}
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
